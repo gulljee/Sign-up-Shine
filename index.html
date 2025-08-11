@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Let's do this!</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <style>
+        @font-face {
+            font-family: Nord-font;
+            src: url(./fonts/Norse-Bold.otf);
+        }
+    </style>
+</head>
+
+<body class="m-0 p-0 bg-gray-100">
+    <div class="flex flex-col lg:flex-row min-h-screen">
+        <div class="relative w-full lg:w-[35%]">
+            <p style="font-family: Nord-font;" class="absolute left-0 w-full text-center z-10 bg-black/40 text-white py-4
+                text-6xl md:text-7xl lg:text-9xl
+                leading-tight" style="top:25%;">
+                Gull
+            </p>
+
+            <img src="images/leaf.jpg" alt="myLeaves" class="w-full object-cover z-0
+            h-89 sm:h-80 md:h-96 lg:h-full" />
+
+        </div>
+
+        <div class="w-full lg:w-[65%] pt-6 lg:pt-20 pb-12">
+            <p class="text-lg ml-4 sm:ml-8 lg:ml-20 font-semibold">
+                You know you need something like this in your life to help you realize your deepest dreams.<br />
+                Sign up <em>now</em> to get started
+            </p>
+
+            <p class="text-lg ml-4 sm:ml-8 lg:ml-20 font-semibold mt-4">You <em>know</em> you want to.</p>
+
+            <div class="bg-white mt-6 lg:mt-10 shadow-xl rounded-md p-6 sm:p-8 lg:p-10 mx-4 sm:mx-8 lg:mx-20">
+                <p class="font-semibold text-lg">Let's do this!</p>
+
+                <form
+                    class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-4 mt-5 tracking-widest text-gray-600 font-semibold">
+                    <div class="flex flex-col text-sm">
+                        <label for="fName" class="text-xs tracking-wider">FIRST NAME</label>
+                        <input type="text" id="fName" required class="border border-gray-200 text-black h-10 pl-2 w-full rounded font-normal text-base
+                          focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none" />
+                    </div>
+
+                    <div class="flex flex-col text-sm">
+                        <label for="lName" class="text-xs tracking-wider">LAST NAME</label>
+                        <input type="text" id="lName" required class="border border-gray-200 text-black h-10 pl-2 w-full rounded font-normal text-base
+                          focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none" />
+                    </div>
+
+                    <div class="flex flex-col text-sm">
+                        <label for="email" class="text-xs tracking-wider">EMAIL</label>
+                        <input type="email" id="email" required class="border border-gray-200 text-black h-10 pl-2 w-full rounded font-normal text-base
+                          focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none" />
+                    </div>
+
+                    <div class="flex flex-col text-sm">
+                        <label for="pNumber" class="text-xs tracking-wider">PHONE <span
+                                class="md:hidden lg:inline">NUMBER</span></label>
+                        <input type="tel" id="pNumber" required class="border border-gray-200 text-black h-10 pl-2 w-full rounded font-normal text-base
+                          focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none" />
+                    </div>
+
+                    <div class="flex flex-col text-sm">
+                        <label for="password" class="text-xs tracking-wider">PASSWORD</label>
+                        <input type="password" id="password" required class="border border-gray-200 text-black h-10 pl-2 w-full rounded font-normal text-base
+                          focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none invalid:border-red-500" />
+                    </div>
+
+                    <div class="flex flex-col text-sm">
+                        <label for="cPassword" class="text-xs tracking-wider">CONFIRM <span
+                                class="md:hidden lg:inline">PASSWORD</span></label>
+                        <input type="password" id="cPassword" required
+                            class="border border-gray-200 text-black h-10 pl-2 w-full rounded font-normal text-base
+                          focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none invalid:border-red-500" />
+                    </div>
+
+                    <div class="mt-3 md:col-span-2">
+                        <input type="submit" value="Create Account"
+                            class="border-none bg-[#596D48] w-full sm:w-[60%] md:w-[35%] p-2 text-white h-10 rounded-md shadow-md cursor-pointer hover:bg-[#6d8356]" />
+                        <p class="text-black mt-4">Already have an account? <a href="#" class="text-[#596D48]">Log
+                                in</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
